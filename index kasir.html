@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasir Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Aplikasi Kasir</h1>
+    <div class="form">
+      <label for="item">Pilih Item:</label>
+      <select id="item"></select>
+
+        <!-- Data dari JavaScript -->
+      </select>
+      <label for="quantity">Jumlah:</label>
+      <input type="number" id="quantity" min="1" value="1">
+      <button id="add-item">Tambah</button>
+    </div>
+    <h2>Daftar Belanja</h2>
+    <table id="cart">
+      <thead>
+        <tr>
+          <th>Nama Item</th>
+          <th>Harga</th>
+          <th>Jumlah</th>
+          <th>Total</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data akan diisi oleh JavaScript -->
+      </tbody>
+    </table>
+    <h3>Total Belanja: Rp <span id="total-price">0</span></h3>
+    <button id="checkout">Checkout</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
